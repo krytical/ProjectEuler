@@ -2,9 +2,12 @@ package ca.JL.projecteuler;
 
 public class Problem7 {
 	public boolean isPrime(long n){
-
-		// Check even numbers
-		if ( n % 2 == 0 )
+		// 1 is not a prime number
+		if (n == 1){
+			return false;
+		}
+		// Check even numbers, 2 is a prime number
+		if ( n % 2 == 0 && n != 2)
 			return false;
 
 		// Check odd numbers
@@ -24,8 +27,8 @@ public class Problem7 {
 		int n = 0;
 		int prime = 0;
 
-		while (n < 10001){
-			for (int i = 1; n != 10001; i++){
+		while (n < 6){
+			for (int i = 1; n != 6; i++){
 				if (p.isPrime(i)){
 					prime = i;
 					n++;
