@@ -27,8 +27,8 @@ public class Problem7 {
 		int n = 0;
 		int prime = 0;
 
-		while (n < 6){
-			for (int i = 1; n != 6; i++){
+		while (n < 10001){
+			for (int i = 1; n != 10001; i++){
 				if (p.isPrime(i)){
 					prime = i;
 					n++;
